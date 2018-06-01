@@ -1,1 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-architect
+title: Space Warz
+description: A battle to save the universe!
+show_downloads: True
