@@ -9,8 +9,14 @@
 # Imports
 import pygame
 import random
-import sys
 import pygame.sprite as sprite
+import sys
+import os
+
+if getattr(sys, 'frozen', False):
+    current_path = sys._MEIPASS
+else:
+    current_path = os.path.dirname(__file__)
 
 # Initialize game engine
 pygame.init()
@@ -30,7 +36,7 @@ background.fill((250, 250, 250))
 #background stuffs
 theClock = pygame.time.Clock()
 
-spacebg = pygame.image.load('assets/imgs/background2.gif')
+spacebg = pygame.image.load(current_path  + '/assets/imgs/background2.gif')
 
 background_size = background.get_size()
 background_rect = background.get_rect()
@@ -54,25 +60,25 @@ YELLOW = (255, 255, 0)
 GREEN = (100, 255, 100)
 
 # Fonts
-FONT_XS = pygame.font.Font("assets/fonts/press_start_2p/PressStart2P.ttf", 18)
-FONT_XL = pygame.font.Font("assets/fonts/a_space/A-SpaceBoldItalicDemo.otf", 72)
+FONT_XS = pygame.font.Font(current_path  + '/assets/fonts/press_start_2p/PressStart2P.ttf', 18)
+FONT_XL = pygame.font.Font(current_path  + '/assets/fonts/a_space/A-SpaceBoldItalicDemo.otf', 72)
 
 # Images
-ship_img = pygame.image.load('assets/imgs/ship.png')
-laser_img = pygame.image.load('assets/imgs/bluelaser.png')
-mob_img = pygame.image.load('assets/imgs/mob.png')
-bomb_img = pygame.image.load('assets/imgs/redlaser.png')
-goodshield = pygame.image.load('assets/imgs/goodshield1.png')
-badshield = pygame.image.load('assets/imgs/badshield1.png')
-dew = pygame.image.load('assets/imgs/dew.png')
-star = pygame.image.load('assets/imgs/star.png')
+ship_img = pygame.image.load(current_path  + '/assets/imgs/ship.png')
+laser_img = pygame.image.load(current_path  + '/assets/imgs/bluelaser.png')
+mob_img = pygame.image.load(current_path  + '/assets/imgs/mob.png')
+bomb_img = pygame.image.load(current_path  + '/assets/imgs/redlaser.png')
+goodshield = pygame.image.load(current_path  + '/assets/imgs/goodshield1.png')
+badshield = pygame.image.load(current_path  + '/assets/imgs/badshield1.png')
+dew = pygame.image.load(current_path  + '/assets/imgs/dew.png')
+star = pygame.image.load(current_path  + '/assets/imgs/star.png')
 
 # Sounds
-hi = pygame.mixer.Sound("assets/noises/chilis.ogg")
-pygame.mixer.music.load("assets/noises/blitz.mp3")
-hit_sound = pygame.mixer.Sound("assets/noises/oof.ogg")
-explosion = pygame.mixer.Sound("assets/noises/boi.ogg")
-dewit = pygame.mixer.Sound('assets/noises/dewit1.ogg')
+hi = pygame.mixer.Sound(current_path  + '/assets/noises/chilis.ogg')
+pygame.mixer.music.load(current_path  + '/assets/noises/blitz.mp3')
+hit_sound = pygame.mixer.Sound(current_path  + '/assets/noises/oof.ogg')
+explosion = pygame.mixer.Sound(current_path  + '/assets/noises/boi.ogg')
+dewit = pygame.mixer.Sound(current_path  + '/assets/noises/dewit1.ogg')
 
 #stages
 START = 0
