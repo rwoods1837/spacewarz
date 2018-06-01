@@ -39,7 +39,7 @@ To play this amazing game, you first need a keyboard.
 
 **DOWNLOAD HERE** -->
 [Linky link](https://github.com/rwoods1837/spacewarz/releases)
-
+---
 Copyright Ryan Woods 2K18
 ---
 '19?
