@@ -37,5 +37,5 @@ To play this amazing game, you first need a keyboard.
 
 ---
 
-**DOWNLOAD HERE**
+**DOWNLOAD HERE** -->
 [Linky link](https://github.com/rwoods1837/spacewarz/releases)
