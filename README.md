@@ -20,3 +20,5 @@ To play this amazing game, you first need a keyboard.
   
 - You lost? no problem, here's how you restart:
   - press 'r' to restart the game once you've lost
+
+- just a warning, it takes 3 hits to kill an enemy, and you can see your health at the top of the screen
