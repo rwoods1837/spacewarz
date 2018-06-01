@@ -33,4 +33,4 @@ To play this amazing game, you first need a keyboard.
 --- 
 
 ### In Game:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/rwoods1837/spacewarz/master/assets/screenshots/game.PNG "In Game Play")
